@@ -1,6 +1,6 @@
 /**
- * Date selector - v1.0.3
- * Copyright 2020 Abel Brencsan
+ * Date selector - v1.1.0
+ * Copyright 2021 Abel Brencsan
  * Released under the MIT License
  */
 
@@ -849,34 +849,6 @@ DateSelector.prototype = function () {
 			this.selectedDate = null;
 			this.isInitialized = false;
 			if (this.destroyCallback) this.destroyCallback.call(this);
-		},
-
-		/**
-		 * Get value of "isInitialized" to check date selector is initialized or not. (public)
-		 */
-		getIsInitialized: function() {
-			return this.isInitialized;
-		},
-
-		/**
-		 * Get value of "selectedDate" to get selected date. (public)
-		 */
-		getSelectedDate: function() {
-			return this.selectedDate;
-		},
-
-		/**
-		 * Get value of "isDateSelected" to check date is selected or not. (public)
-		 */
-		getIsDateSelected: function() {
-			return this.isDateSelected;
-		},
-
-		/**
-		 * Get value of "availableIntervals" to get available intervals. (public)
-		 */
-		getAvailableIntervals: function() {
-			return this.availableIntervals;
 		}
 	};
 
@@ -1079,11 +1051,7 @@ DateSelector.prototype = function () {
 		selectMinute: dateSelector.selectMinute,
 		selectTime: dateSelector.selectTime,
 		selectByTimestamp: dateSelector.selectByTimestamp,
-		destroy: dateSelector.destroy,
-		getIsInitialized: dateSelector.getIsInitialized,
-		getSelectedDate: dateSelector.getSelectedDate,
-		getIsDateSelected: dateSelector.getIsDateSelected,
-		getAvailableIntervals: dateSelector.getAvailableIntervals
+		destroy: dateSelector.destroy
 	};
 
 }();

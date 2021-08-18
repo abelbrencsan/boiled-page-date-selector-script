@@ -175,22 +175,6 @@ Parameter | Type | Required | Description
 
 `destroy()` - Destroy date selector. It removes all related events.
 
-### Check date selector is initialized or not
-
-`getIsInitialized()` - Check date selector is initialized or not. It returns `true` when it is already initialized, `false` if not.
-
-### Get selected date
-
-`getSelectedDate()` - Get selected date of date selector.
-
-### Check date is selected or not
-
-`getIsDateSelected()` - Check date is selected or not. It returns `true` when a date completely selected, `false` if not.
-
-### Get available intervals
-
-`getAvailableIntervals()` - Get available intervals calculated from intervals and excluded dates.
-
 ## Examples
 
 ### Example 1
